@@ -1,0 +1,18 @@
+Задача D
+1) Создать in-memory базу в sqlite
+2) Создать в ней таблицу студентов
+student: (id: int, first_name: varchar(64), middle_name: varchar(64), last_name: varchar(64), group: varchar(16), faculty: varchar(16), age: int)
+3) На вход подаются данные таблицы студентов в CSV формате. Прочитать данные и положить таблицу в СУБД
+Необходимо реализовать мини ORM Тестирование будет производиться через вызов eval. Ваша задача определить функцию find(id), которая возвращает объект, ассоциированный со строкой таблицы student. Тест будет находить по id студента(через find) и менять его свойства, которые должны автоматически синхронизироваться с базой. После окончания теста (вызова eval) вам необходимо сохранить новое состояния базы в csv и вывести на выходной поток NB: использовать встроенные в python пакеты sqlite3 и csv https://docs.python.org/3/library/sqlite3.html https://docs.python.org/3/library/csv.html https://ru.wikipedia.org/wiki/ORM
+
+Input format
+дапм в CSV
+
+Output format
+дапм в CSV
+
+Examples
+
+Input
+
+Output

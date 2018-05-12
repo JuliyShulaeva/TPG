@@ -1,0 +1,28 @@
+
+
+# stack.py
+
+def new_stack():
+    return []
+
+
+def push(a, stack):
+    stack.append(a)
+
+
+def pop(stack):
+    try:
+        stack.pop()
+    except IndexError:
+        raise IndexError("pop from empty stack")
+
+
+def top(stack):
+    try:
+        return stack[len(stack) - 1]
+    except IndexError:
+        raise IndexError("top: stack empty")
+
+
+def empty(stack):
+    return stack

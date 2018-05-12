@@ -1,0 +1,20 @@
+Задача С
+1) Создать in-memory базу в sqlite
+2) Создать в ней таблицу студентов
+student: (id: int, first_name: varchar(64), middle_name: varchar(64), last_name: varchar(64), group: varchar(16), faculty: varchar(16), age: int)
+3) На вход подаются данные таблицы студентов в CSV формате. Прочитать данные и положить таблицу в СУБД
+4) С помощью sql выяснить сколько студентов в возрасте > 18 лет учатся на факультете 'FCS', фамилия которых начинается на 'S'
+5) результат напечатать
+NB: использовать встроенные в python пакеты sqlite3 и csv https://docs.python.org/3/library/sqlite3.html https://docs.python.org/3/library/csv.html
+
+Input format
+дапм в CSV
+
+Output format
+целое число
+
+Examples
+
+Input
+
+Output
