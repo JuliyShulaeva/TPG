@@ -1,0 +1,102 @@
+#include <iostream>
+#include <windows.h>
+#include<math.h>
+#include<stdio.h>
+int main()
+{
+	int j = 0;
+	int i = 0;
+	int n = 0;
+	int m = 0;
+	int k = 0;
+	std::cout << "Vvedite razmer vysoty treugolnika:";
+	std::cin >> n;
+	std::cout << "Vvedite razmer osnovy treugolnika:";
+	std::cin >> m;
+	for (i = 0; i < n, k < m; i++)
+	{
+		for (j = 0; j <= k; j++)
+			std::cout << "*";
+		k++;
+		std::cout << "\n";
+	}
+	system("PAUSE");
+	return 0;
+}
+
+program lab41;
+         uses Graph;
+               var  Gd,Gm:integer;
+                  begin
+                        Gd:=VGA;
+                         Gm:=VGAHi;
+                         InitGraph (Gd,Gm,'..\bgi');
+                              If  GraphResult=grOk
+                                       then  begin
+                                        Line (120,210,520,210);
+                                        Line (120,210,320,10);
+                                        Line (320,10,520,210);
+                                        readln;
+
+                                       end;
+                                        end.
+program lab42;
+uses Graph;
+var  Gd,Gm:integer;
+   begin
+      Gd:=VGA;
+      Gm:=VGAHi;
+      InitGraph (Gd,Gm,'..\bgi');
+      if GraphResult=grOk
+         then begin
+                 SetColor (LightMagenta);
+                 Line (120,210,520,210);
+                 SetColor (LightCyan);
+                 Line (120,210,320,10);
+                 SetColor (Green);
+                 Line (320,10,520,210);
+                 readln;
+                 end;
+                 end.
+
+
+program lab43;
+      uses Graph;
+      const CenterX=320;
+            CenterY=240;
+      var   Gd,Gm:integer;
+            i:integer;
+   begin
+      Gd:=VGA;
+      Gm:=VGAHi;
+      InitGraph (Gd,Gm,'..\bgi');
+      if GraphResult=grOk
+         then begin
+                  For i:=0 to 23  do
+                     Circle (CenterX,CenterY,i*10);
+                  readln;
+               end;
+   end.
+
+program lab44;
+      uses Graph;
+      const CX=320;
+            CY=240;
+      var Gd,Gm:integer;
+            i:integer;
+   begin
+      Gd:=VGA;
+      Gm:=VGAHi;
+      InitGraph (Gd,Gm,'..\bgi');
+      if GraphResult=grOk
+         then begin
+                  for i:=0 to 23  do
+                     Circle (CX,CY,i*10);
+                  for i:=0 to 23  do
+                     begin
+                        SetFillStyle (1,i mod 16);
+                        FloodFill (CX,CY+i*10-5,white)
+                     end;
+                  readln;
+               end;
+end.
